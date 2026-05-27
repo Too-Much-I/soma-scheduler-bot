@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "소마 일정 자동 전송기",
+  "version": "1.1",
+  "description": "신청하기 버튼을 누르면 자동으로 노션에 일정을 등록합니다.",
+  "permissions": [],
+  "host_permissions": [
+    "https://2e5998d0-caad-4b0f-8eb0-aee5286eb59d-00-3006re4lkei9x.sisko.replit.dev/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://swmaestro.ai/*",
+        "*://*.swmaestro.ai/*"
+      ], 
+      "js": ["content.js"]
+    }
+  ]
+}
